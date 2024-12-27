@@ -7,8 +7,9 @@
         Task ReadAsync(K key);
 
         Task <IEnumerable<T>> ReadAllAsync();
-        Task UpdateAsync(T item);
-        Task DeleteAsync(K key);
 
+        Task UpdateAsync(T item);
+
+        Task DeleteAsync(K key);
     }
 }
