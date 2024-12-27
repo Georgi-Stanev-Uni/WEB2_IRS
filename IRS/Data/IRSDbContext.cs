@@ -15,7 +15,7 @@ namespace IRS.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-2T34TGN;Database=IRSDB_1;TrustServerCertificate=True;Trusted_Connection=True;MultipleActiveResultSets=true;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-1KLCRTE;Database=IRSDB_1;TrustServerCertificate=True;Trusted_Connection=True;MultipleActiveResultSets=true;");
         }
 
         public DbSet<IRS.Models.Cook> Cooks { get; set; }
