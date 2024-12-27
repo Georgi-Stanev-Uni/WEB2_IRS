@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRS", "IRS\IRS.csproj", "{A38DC008-278F-47B8-AA61-82343FB9FE77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38DC008-278F-47B8-AA61-82343FB9FE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38DC008-278F-47B8-AA61-82343FB9FE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38DC008-278F-47B8-AA61-82343FB9FE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38DC008-278F-47B8-AA61-82343FB9FE77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29206067-EAA1-459B-A322-698574791BE1}
+	EndGlobalSection
+EndGlobal
