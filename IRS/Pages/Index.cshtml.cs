@@ -1,18 +1,27 @@
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace IRS.Pages
 {
-    public class IndexModel : PageModel
+    public class LoginModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        public bool boll { get;  set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IActionResult OnPost (string submitForm)
         {
-            _logger = logger;
-        }
+            if (submitForm == "Login")
+            {
 
+                return RedirectToPage("/Home");
+            }
+            else
+            {
+                return RedirectToPage("/Login");
+            }
+            }
         public void OnGet()
+        
         {
 
         }

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/IRS.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header style="width: 100%">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand me-4" asp-area="" asp-page="/Home">IRS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @* Тук са разписани отделните роли на потребители и ще се доразпишат отделните страници които ще имаме за всеки тип потребител... *@
+                        @* Cook *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Cook">Cook</a>
+                        </li>
+                        @* Deliverer *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Deliverer">Deliverer</a>
+                        </li>
+                        @* Host *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Host">Host</a>
+                        </li>
+                        @* Manager *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Manager">Manager</a>
+                        </li>
+                        @* Waiter *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Waiter">Waiter</a>
+                        </li>
+                        @* Order *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Order">Order</a>
+                        </li>
+                        @* Product *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Product">Product</a>
+                        </li>
+                        @* StorageItem *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/StorageItem">StorageItem</a>
+                        </li>
+                        @* Table *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Table">Table</a>
+                        </li>
+                        @* ToGoOrder *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ToGoOrder">ToGoOrder</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">
+                                <i class="bi bi-box-arrow-in-right"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

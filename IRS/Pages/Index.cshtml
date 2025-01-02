@@ -1,10 +1,39 @@
 ﻿@page
-@model IndexModel
+@model IRS.Pages.LoginModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Login";
+    <link href="~/css/Login.css" rel="stylesheet" />
+    Layout = "_LoginLayout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-body">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="position">Position</label>
+                <select id="position" name="Position">
+                    <option value="Cook">Cook</option>
+                    <option value="Waiter">Waiter</option>
+                    <option value="Manager">Manager</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" name="submitForm" value="Login">Submit</button>
+            </div>
+            @{
+                if(Model.boll)
+                {
+                    Layout = "_HomeLayout";
+                    
+                }
+            }
+        </form>
+    </div>
 </div>
+
